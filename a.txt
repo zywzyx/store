@@ -1,0 +1,7 @@
+git commit 提交
+git branch 创建分支
+git meger 合并
+git rebase 合并
+
+git branch -f master HEAD~3
+
