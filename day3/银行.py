@@ -73,7 +73,7 @@ def user():
           print("该银行用户已满")
           return 3
      else:
-         if brankname in brankNames:
+         if userName in brankUser:
              print('用户已存在！\n', brankUser)
          return 2
 
