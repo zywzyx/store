@@ -21,6 +21,7 @@ shop = [
 money = input("亲输入您的初始余额：")
 money = int(money)
 
+
 # 2. 准备一个空的购物车
 mycart = []
 # 3. 准备一个我的优惠券包
