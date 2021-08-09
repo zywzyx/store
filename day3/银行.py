@@ -59,7 +59,7 @@ def user():
      City = input('请输入城市:')
      Street = input('请输入街道:')
      Table = input('请输入门牌号:')
-     if userCode not in Code and brankname in brankNames:
+     if userCode not in Code:
           Code.append(userCode)
           if userName not in brankUser:
               brankUser[brankname].append({"账户":userCode,"姓名":userName,"密码":userPwd,"存款":0})
