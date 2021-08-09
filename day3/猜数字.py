@@ -28,7 +28,7 @@ while True:
     number = int(input("请输入数字:"))
 
     if number > num and many >0:
-        many = many - 500
+        many = many - 5
         print("大了,扣除金币5，当前金币数：",many)
     elif number < num and many >0:
         many = many - 5
