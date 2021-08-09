@@ -29,12 +29,27 @@ brankUser = {'中国工商银行':[{"账户":"2222","姓名":"zyw","密码":"222
 userlist = {'2222':[{'国家':'中国','省份':'河北','城市':'唐山','街道':'中山路','门牌号':'010'}],'3333':[{'国家':'中国','省份':'河北','城市':'唐山','街道':'中山路','门牌号':'011'}]}
 money = 0
 
+myinfo='''
+    \033[0;32;40m
+    ------------账户信息------------
+    账号：{userCode}
+    姓名：{userName}
+    密码：{userPwd}
+    地址：
+    国家：{Country}
+    省份：{Province}
+    街道：{Street}
+    门牌号：{Table}
+    注册银行名：{brankname}
+    -------------------------------
+    \033[0m
+'''
 
-#随机生成账号
-userCode = ''.join(random.sample(string.digits, 8))
 #开户
 
 def user():
+    # 随机生成账号
+     userCode = ''.join(random.sample(string.digits, 8))
      print('账号:',userCode)
      userName = input('请输入姓名:')
      userPwd = input('请输入密码:')
@@ -44,20 +59,24 @@ def user():
      City = input('请输入城市:')
      Street = input('请输入街道:')
      Table = input('请输入门牌号:')
-     if userCode not in Code:
+     if userCode not in Code and brankname in brankNames:
           Code.append(userCode)
           if userName not in brankUser:
-              brankUser[brankname]=[{"账户":userCode,"姓名":userName,"密码":userPwd,"存款":0}]
+              brankUser[brankname].append({"账户":userCode,"姓名":userName,"密码":userPwd,"存款":0})
               userlist[userCode]=[{'国家': Country, '省份':Province,'城市':City,'街道':Street,'门牌号':Table}]
-              print('开户成功！\n',brankUser)
-              print(userlist)
+              print('开户成功！！！\n',brankUser)
+          return 1
+
+
 
      elif  len(brankUser[brankname]) == 100:
           print("该银行用户已满")
+          return 3
      else:
-          if brankname in brankNames:
-             brankUser[brankname].append( {"账户": userCode, "姓名": userName, "密码": userPwd, "存款": 0} )
-             print('开户成功！\n', brankUser)
+         if brankname in brankNames:
+             print('用户已存在！\n', brankUser)
+         return 2
+
 
 
 
@@ -88,12 +107,13 @@ def getMoney():
             if money < brankUser['中国工商银行'] [i] ['存款']:
                 brankUser['中国工商银行'][i]['存款'] -= money
                 print('取款成功，总余额为:', brankUser['中国工商银行'][i]["存款"])
+                return 0
             else:
                 print('余额不足！')
-                return True
+                return 3
     else:
         print('账户或密码错误！')
-        return False
+        return 1
 
 #转钱
 def transferMoney():
@@ -109,12 +129,15 @@ def transferMoney():
                         brankUser['中国工商银行'][i]['存款'] -= money
                         brankUser['中国工商银行'][j]['存款'] += money
                         print('转账成功，总余额为:', brankUser['中国工商银行'][i]["存款"])
+                        return 0
 
                     else:
                          print('余额不足')
-                return True
+                         return 3
+            return True
     else:
         print('账户或密码错误！')
+        return 1
 
 
 
@@ -128,7 +151,7 @@ def selectUser():
             print( brankUser['中国工商银行'][i])
             for j in range(0, len(userlist[code])):
                 print(userlist[code][j])
-            return True
+            return
 
 
     else:
@@ -137,7 +160,7 @@ def selectUser():
 
 #退出
 def exit():
-    print('感谢您的使用，下次再见')
+    print('感谢您的使用，下次再见！')
     sys.exit()
 
 
