@@ -31,10 +31,13 @@ luck = random.randint(0,2)
 mycp = coupon[luck]
 print("你抽到了:",mycp[1])
 mycoupon.append(mycp)
+i = 0  #定义优惠券数量
+i = i+1 #抽到则加一
+
 # 3.开始购物
 
-i  = 0
-while i < 20:
+
+while True:
     for key,value in enumerate(shop):
         print(key,value)
     # 请输入您要卖的商品
@@ -48,25 +51,30 @@ while i < 20:
         else:
             for s in range(0, len(mycoupon)):
 
-               if shop[chose][0] in mycoupon[s][0] and money > money - shop[chose][1]*mycoupon[s][2]:
 
-                   money = money - shop[chose][1]*mycoupon[s][2]
-                   print("恭喜，商品添加成功！您的余额为：￥",money)
-                   print("输入Q打印小票,结束购物")
-                   mycoupon.pop(s)
+                if shop[chose][0] in mycoupon[s][0] and money > money - shop[chose][1]*mycoupon[s][2] and i >0:  #优惠券内包含所选商品且余额买得起商品，优惠券数量大于0
 
-
-
-
-            if money  >= shop[chose][1]:
-                   money = money - shop[chose][1]
-                   print("恭喜，商品添加成功！！！！您的余额为：￥",money)
-                   print("输入Q打印小票,结束购物")
+                    i = i-1
+                    money = money - shop[chose][1]*mycoupon[s][2]
+                    mycart.append((shop[chose][0],shop[chose][1]*mycoupon[s][2]))
+                    print("恭喜，商品添加成功！您的余额为：￥",money)
+                    print("输入Q打印小票,结束购物")
 
 
-            else:
-                   print("温馨提示：您的银行卡余额不足，穷鬼！请买其他商品！")
-                   print("输入Q打印小票,结束购物")
+
+
+
+
+                elif money  >= shop[chose][1] and i < 1: #余额大于所选商品价格，优惠券数量小于1
+                      money = money - shop[chose][1]
+                      mycart.append(shop[chose])
+                      print("恭喜，商品添加成功！！！！您的余额为：￥",money)
+                      print("输入Q打印小票,结束购物")
+
+
+                else:
+                      print("温馨提示：您的银行卡余额不足，穷鬼！请买其他商品！")
+                      print("输入Q打印小票,结束购物")
 
 
     elif chose == "q" or chose == "Q":
@@ -75,7 +83,7 @@ while i < 20:
     else:
         print("对不起，别瞎弄！重新输入！")
 
-    i = i + 1
+
 
 
 # 4. 打印结算购物小条
@@ -84,4 +92,6 @@ print("以下是您的购物小条，请拿好！！！！么么哒！")
 print("".center(30,"-"))
 for key,value in enumerate(mycart):
     print(key,value)
+
 print("".center(30,"-"))
+print("余额:",money)
