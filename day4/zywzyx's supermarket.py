@@ -1,9 +1,9 @@
 import random
 
 coupon = [
-    ["机械革命","机械革命 5折优惠券",0.5],
-    ["卫龙辣条","卫龙辣条 3折优惠券",0.3],
-    ["HUA WEI WATCH","HUA WEI WATCH 8折优惠券",0.8]
+    ["机械革命","机械革命 5折优惠券",0.5]*10,
+    ["卫龙辣条","卫龙辣条 3折优惠券",0.3]*20,
+    ["HUA WEI WATCH","HUA WEI WATCH 8折优惠券",0.8]*15
 ]
 
 shop = [
@@ -93,9 +93,9 @@ print("以下是您的购物小条，请拿好！！！！么么哒！")
 print("".center(30,"-"))
 for key,value in enumerate(mycart):
     print(key,value)
-    sum = mm -money
+    HH = mm - money
 
 
 print("".center(30,"-"))
-print("合计花费:",sum)
+print("合计花费:", HH)
 print("余额:",money)
