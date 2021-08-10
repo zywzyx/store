@@ -20,6 +20,7 @@ shop = [
 
 money = input("亲输入您的初始余额：")
 money = int(money)
+mm = money #花费金额 = 初始金额 -余额
 
 
 # 2. 准备一个空的购物车
@@ -56,7 +57,7 @@ while True:
 
                     i = i-1
                     money = money - shop[chose][1]*mycoupon[s][2]
-                    mycart.append((shop[chose][0],shop[chose][1]*mycoupon[s][2]))
+                    mycart.append([shop[chose][0],shop[chose][1]*mycoupon[s][2]])
                     print("恭喜，商品添加成功！您的余额为：￥",money)
                     print("输入Q打印小票,结束购物")
 
@@ -92,6 +93,9 @@ print("以下是您的购物小条，请拿好！！！！么么哒！")
 print("".center(30,"-"))
 for key,value in enumerate(mycart):
     print(key,value)
+    sum = mm -money
+
 
 print("".center(30,"-"))
+print("合计花费:",sum)
 print("余额:",money)
