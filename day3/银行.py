@@ -116,6 +116,8 @@ def transferMoney():
                     else:
                          print('余额不足')
                          return 3
+            else:
+                print("转入账户不存在")
             return True
     else:
         print('账户或密码错误！')
