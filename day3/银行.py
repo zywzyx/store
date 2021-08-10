@@ -138,8 +138,9 @@ def selectUser():
             return
 
 
+
     else:
-        print('账户不存在！')
+        print('账户或密码错误！')
 
 
 #退出
