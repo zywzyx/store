@@ -25,6 +25,7 @@ mm = money #花费金额 = 初始金额 -余额
 
 # 2. 准备一个空的购物车
 mycart = []
+number =[]
 # 3. 准备一个我的优惠券包
 mycoupon = []
 #抽优惠券
@@ -43,32 +44,49 @@ while True:
         print(key,value)
     # 请输入您要卖的商品
     chose = input("请输入您要买的商品:")
-
+    if chose =='q':
+        break
+    num = input("请输入购买数量:")
+    number.append("数量："+num)
+    num_list = []
+    num_list.append(int(num))
     if chose.isdigit():
         chose = int(chose) # "1" --> 1
         if chose > len(shop) or chose < 0: # 9 > 7
-
             print("该商品不存在！别瞎弄！")
         else:
             for s in range(0, len(mycoupon)):
 
 
-                if shop[chose][0] in mycoupon[s][0] and money > money - shop[chose][1]*mycoupon[s][2] and i >0:  #优惠券内包含所选商品且余额买得起商品，优惠券数量大于0
+                if shop[chose][0] in mycoupon[s][0] and money > money - shop[chose][1]*mycoupon[s][2]*int(num) and i >0 and int(num) ==1:  #优惠券内包含所选商品且余额买得起商品，优惠券数量大于0
 
                     i = i-1
                     money = money - shop[chose][1]*mycoupon[s][2]
-                    mycart.append([shop[chose][0],shop[chose][1]*mycoupon[s][2]])
+                    mycart.append([[shop[chose][0],shop[chose][1]* mycoupon[s][2]]+number])
+                    number.pop()
                     print("恭喜，商品添加成功！您的余额为：￥",money)
+                    print("输入Q打印小票,结束购物")
+                elif shop[chose][0] in mycoupon[s][0] and money > money - shop[chose][1]*mycoupon[s][2]*int(num) and i >0 and int(num)>1:
+                    i = i - 1
+                    money = money - shop[chose][1] * mycoupon[s][2]
+                    nn = float(num)
+                    money = money - (shop[chose][1] * nn)
+                    mycart.append([shop[chose][0],shop[chose][1]*mycoupon[s][2]])
+                    n = num_list[0] - 1
+                    number.pop()
+                    number.append("数量："+str(n))
+
+                    mycart.append([[shop[chose][0], shop[chose][1]] + number])
+                    number.pop()
+                    print("恭喜，商品添加成功！您的余额为：￥", money)
                     print("输入Q打印小票,结束购物")
 
 
+                elif money  >= shop[chose][1] and i <= 1: #余额大于所选商品价格，优惠券数量小于1
+                      money = money - shop[chose][1]*int(num)
+                      mycart.append([shop[chose]+number])
 
-
-
-
-                elif money  >= shop[chose][1] and i < 1: #余额大于所选商品价格，优惠券数量小于1
-                      money = money - shop[chose][1]
-                      mycart.append(shop[chose])
+                      number.pop()
                       print("恭喜，商品添加成功！！！！您的余额为：￥",money)
                       print("输入Q打印小票,结束购物")
 
@@ -93,8 +111,8 @@ print("以下是您的购物小条，请拿好！！！！么么哒！")
 print("".center(30,"-"))
 for key,value in enumerate(mycart):
     print(key,value)
-    HH = mm - money
 
+HH = mm - money
 
 print("".center(30,"-"))
 print("合计花费:", HH)
