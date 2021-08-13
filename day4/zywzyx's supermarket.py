@@ -71,7 +71,7 @@ while True:
                     money = money - shop[chose][1] * mycoupon[s][2]
                     nn = float(num)
                     money = money - (shop[chose][1] * nn)
-                    mycart.append([shop[chose][0],shop[chose][1]*mycoupon[s][2]])
+                    mycart.append([shop[chose][0],'%.2f'% (shop[chose][1]*mycoupon[s][2])])
                     n = num_list[0] - 1
                     number.pop()
                     number.append("数量："+str(n))
@@ -115,5 +115,5 @@ for key,value in enumerate(mycart):
 HH = mm - money
 
 print("".center(30,"-"))
-print("合计花费:", HH)
+print("合计花费:",'%.2f' % HH)
 print("余额:",money)
