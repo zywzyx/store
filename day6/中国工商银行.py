@@ -143,10 +143,9 @@ def transferMoney():
     pwd = input('请输入密码:')
     for i in range(0, len(brankUser['中国工商银行'])):
         if code == brankUser['中国工商银行'][i]['账户'] and pwd == brankUser['中国工商银行'][i]['密码']:
-
+            transferCode = input('请输入转入账户:')
             for j in range(0, len(brankUser['中国工商银行'])):
-                transferCode = input('请输入转入账户:')
-                if transferCode == brankUser['中国工商银行'][j]['账户']:
+                if transferCode == brankUser['中国工商银行'][j]['账户']: #跨省转账
                     if userlist[code][0]['省份'] == userlist[transferCode][0]['省份']:
                         money = float(input('请输入转出金额:'))
                         if money < brankUser['中国工商银行'][j]['存款']:
@@ -161,10 +160,9 @@ def transferMoney():
                             else:
                                 print('请输入y/n')
                                 return False
-
                         else:
                              print('余额不足')
-                             return 3
+                             return False
                     else:
                         money = float(input('请输入转出金额:'))
                         if money+money*0.1 < brankUser['中国工商银行'][j]['存款']:
@@ -179,31 +177,31 @@ def transferMoney():
                             else:
                                 print('请输入y/n')
                                 return False
-
                         else:
                             print('余额不足')
-                            print('转出金额:',money+money*.1,'包含手续费0.1')
+                            print('转出金额:',money+money*0.1,'包含手续费0.1')
                             return 3
-                elif transferCode != brankUser['中国工商银行'][j]['账户']:
-                    from nnn import takemoneyww
-                    moneyy = float(input('请输入转出金额:'))
-                    #print('农行0', moneyy, transferCode)
-                    cd = int(transferCode)
-                    #print(cd)
-                    takemoneyww(cd,moneyy)
-                    s = takemoneyww(cd,moneyy)
-                    if s == 1:
-                        brankUser['中国工商银行'][i]['存款'] -= moneyy
-                        print("转账成功，余额为:",brankUser['中国工商银行'][i]['存款'])
+            if transferCode != brankUser['中国工商银行'][j]['账户']:   #跨行转账
+                from 农行 import takemoneyww
+                moneyy = float(input('请输入转出金额:'))
+                #print('农行0', moneyy, transferCode)
+                print(moneyy)
+                cd = int(transferCode)
+                #print(cd)
 
-                    elif s == 0:
-                        print("账号不存在")
-                        return False
+                s = takemoneyww(cd,moneyy)
+                if s == 1:
+                    brankUser['中国工商银行'][i]['存款'] -= moneyy
+                    print("转账成功，余额为:",brankUser['中国工商银行'][i]['存款'])
+                    return False
+                elif s == 0:
+                    print("账号不存在")
+                    return False
 
 
-            else:
-                print("转入账户不存在!!")
-            return True
+            # else:
+            #     print("转入账户不存在!!")
+            # return True
     else:
         print('账户或密码错误！')
         return 1
@@ -244,6 +242,7 @@ def exit():
 
 #选项
 def index():
+  from 农行 import information
   while True:
      interface()
      choose = int(input('输入序号以选择使用的功能:'))
@@ -259,7 +258,7 @@ def index():
      elif choose ==5:
          selectUser()
      elif choose ==6:
-         exit()
+         information()
 
 
 #index()

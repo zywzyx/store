@@ -194,10 +194,13 @@ def takemoneyww(cd,moneyy):
     #print(cd,moneyy)
     if cd in bank:
         bank[cd]["money"] = bank[cd]["money"] + moneyy
+        #print(bank[cd]["money"])
         #print('农行',moneyy,cd)
+
         return 1
     else:
         #print('账号不存在')
+
         return 0
 
 
@@ -210,7 +213,7 @@ def bank_transfer(account1, account2, password1, tranmoney):
 
     elif account1 in bank and account2 not in bank:
         if bank[account1]["password"] == password1:
-            from mmm import takemoneyee
+            from 中国工商银行 import takemoneyee
             print('农行', tranmoney, account2,account1)
             takemoneyee(account2,tranmoney)
             s = takemoneyee(account2,tranmoney)
