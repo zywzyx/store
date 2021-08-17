@@ -213,7 +213,7 @@ def bank_transfer(account1, account2, password1, tranmoney):
 
     elif account1 in bank and account2 not in bank:
         if bank[account1]["password"] == password1:
-            from 中国工商银行 import takemoneyee
+            from 工行 import takemoneyee
             print('农行', tranmoney, account2,account1)
             takemoneyee(account2,tranmoney)
             s = takemoneyee(account2,tranmoney)

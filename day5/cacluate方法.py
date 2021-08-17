@@ -18,18 +18,20 @@ def cacluate ():
             sum = 0
             for i in number_list:
                 sum = int(sum) + int(i)
-            average = sum / (len(number_list) - 1)
+            average = sum / len(number_list)
             arge.insert(0,int(average))
             for x in number_list:
                 if int(x) > average:
                     arge.insert(1, x)
+                    number_tuple = arge
+                    print("值:", number_tuple)
+            break
         else:
             number_list.append(int(num))
             print(number_list)
 
-        number_tuple = arge
-        print("值:", number_tuple)
-        break
+
+
 
 
     #print(average)
