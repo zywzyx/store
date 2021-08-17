@@ -23,6 +23,7 @@ for i in range(12):
                     "单价": price,
                     "销售量":cl[name]["销售量"]+num
                 }
+            print(i,"月销售量:")
             break
 print(cl)
 money = 0
@@ -33,15 +34,17 @@ for x in cl:
 
 print("全年销售量:",number,"件")
 print('年销售额:','%.1f' % money,"元")
-li = []
+
 for y in cl:
     nm = cl[y]["销售量"] / number * 100
-    li.append(y)
-    print(y,'%.2f' %nm,"%")
+    nn = cl[y]["销售量"] * cl[y]["单价"] / money * 100
+    print(y,"销售量", '%.2f' % nn, "%","销售额",'%.2f' %nm,"%")
+
 
 
 min = max = cl["羽绒服"]["销售量"]
-#min = cl["羽绒服"]["销售量"]
+
+
 for i in cl:
     if max<cl[i]["销售量"]:
         max = cl[i]["销售量"]
@@ -49,10 +52,7 @@ for i in cl:
     if min >cl[i]["销售量"]:
         min =cl[i]["销售量"]
         m=i
-# for y in cl:
-#     if min>cl[y]["销售量"]:
-#         min = cl[y]["销售量"]
-#         m = y
+
 print("最畅销的衣服:",v,max,"件")
 print("销售最低的衣服:",m,min,"件")
 
