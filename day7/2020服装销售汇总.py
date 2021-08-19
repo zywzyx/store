@@ -23,7 +23,7 @@ for i in range(12):
                     "单价": price,
                     "销售量":cl[name]["销售量"]+num
                 }
-            print(i,"月销售量:")
+
             break
 print(cl)
 money = 0
