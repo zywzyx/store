@@ -4,7 +4,6 @@ from DBUtils import update
 
 excl =xlrd.open_workbook(filename=r"F:\PythonCode\python\2020.xlsx",encoding_override=True)
 
-
 for i in range(12):
     st = excl.sheet_by_index(i)
     rows = st.nrows

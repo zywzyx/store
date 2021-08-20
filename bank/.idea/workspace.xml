@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d569765-184d-413e-8231-eece56f0785b" name="默认变更列表" comment="跨行转账和12个月份Excel数据导入MySQL">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/excl.py" beforeDir="false" afterPath="$PROJECT_DIR$/excl.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +141,21 @@
       <option name="project" value="LOCAL" />
       <updated>1629446898906</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="跨行转账和12个月份Excel数据导入MySQL">
+      <created>1629447265220</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1629447265220</updated>
+    </task>
+    <task id="LOCAL-00006" summary="跨行转账和12个月份Excel数据导入MySQL">
+      <created>1629447285818</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1629447285818</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
