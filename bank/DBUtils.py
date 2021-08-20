@@ -19,6 +19,20 @@ def update(sql,param):
     cursor.close()
     con.close()
 
+#建表
+def create(sql):
+    # 2. 获取连接
+    con = pymysql.connect(host=host,user=user,password=password,database=database)
+    # 3. 创建游标
+    cursor = con.cursor()
+    # 4.执行sql
+    cursor.execute(sql)
+    # 5.提交
+    con.commit()
+    # 6.关闭
+    cursor.close()
+    con.close()
+
 # 专门针对于查询
 def select(sql,param):
     # 2. 获取连接

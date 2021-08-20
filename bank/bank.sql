@@ -11,7 +11,7 @@
  Target Server Version : 50624
  File Encoding         : 65001
 
- Date: 19/08/2021 17:19:25
+ Date: 20/08/2021 16:03:28
 */
 
 SET NAMES utf8mb4;
@@ -86,5 +86,68 @@ INSERT INTO `iabc` VALUES ('73247155', '1', '1', '1', '1', '1', '1', '1', '中�
 INSERT INTO `iabc` VALUES ('31716040', '1', '1', '2', '23', '5', '8', '1', '中国工商银行');
 INSERT INTO `iabc` VALUES ('08159674', '1', '1', '1', '1', '1', '1', '90', '中国工商银行');
 INSERT INTO `iabc` VALUES ('31206948', '1', '1', '1', '1', '1', '1', '111', '中国工商银行');
+
+-- ----------------------------
+-- Table structure for shop
+-- ----------------------------
+DROP TABLE IF EXISTS `shop`;
+CREATE TABLE `shop`  (
+  `日期` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `服装名称` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `价格/件` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `本月库存数量` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `销售量/日` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of shop
+-- ----------------------------
+INSERT INTO `shop` VALUES ('样表', '样表', '样表', '样表', '样表');
+
+-- ----------------------------
+-- Table structure for shop_1
+-- ----------------------------
+DROP TABLE IF EXISTS `shop_1`;
+CREATE TABLE `shop_1`  (
+  `日期` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `服装名称` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `价格/件` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `本月库存数量` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
+  `销售量/日` varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Compact;
+
+-- ----------------------------
+-- Records of shop_1
+-- ----------------------------
+INSERT INTO `shop_1` VALUES ('1号', '羽绒服', '253.6', '500', '10');
+INSERT INTO `shop_1` VALUES ('2号', '牛仔裤', '86.3', '600', '60');
+INSERT INTO `shop_1` VALUES ('3号', '风衣', '96.8', '335', '43');
+INSERT INTO `shop_1` VALUES ('4号', '皮草', '135.9', '855', '63');
+INSERT INTO `shop_1` VALUES ('5号', 'T血', '65.8', '632', '63');
+INSERT INTO `shop_1` VALUES ('6号', '马甲', '49.3', '562', '120');
+INSERT INTO `shop_1` VALUES ('7号', '牛仔裤', '86.3', '600', '72');
+INSERT INTO `shop_1` VALUES ('8号', '羽绒服', '253.6', '500', '69');
+INSERT INTO `shop_1` VALUES ('9号', '牛仔裤', '86.3', '600', '35');
+INSERT INTO `shop_1` VALUES ('10号', '羽绒服', '253.6', '500', '140');
+INSERT INTO `shop_1` VALUES ('11号', '牛仔裤', '86.3', '600', '90');
+INSERT INTO `shop_1` VALUES ('12号', '皮草', '135.9', '855', '24');
+INSERT INTO `shop_1` VALUES ('13号', '小西装', '65.8', '632', '45');
+INSERT INTO `shop_1` VALUES ('14号', '风衣', '96.8', '335', '25');
+INSERT INTO `shop_1` VALUES ('15号', '牛仔裤', '86.3', '600', '60');
+INSERT INTO `shop_1` VALUES ('16号', 'T血', '65.8', '632', '129');
+INSERT INTO `shop_1` VALUES ('17号', '羽绒服', '253.6', '500', '10');
+INSERT INTO `shop_1` VALUES ('18号', '小西装', '96.8', '335', '43');
+INSERT INTO `shop_1` VALUES ('19号', 'T血', '65.8', '632', '63');
+INSERT INTO `shop_1` VALUES ('20号', '皮衣', '86.3', '600', '60');
+INSERT INTO `shop_1` VALUES ('21号', '皮草', '135.9', '855', '63');
+INSERT INTO `shop_1` VALUES ('22号', '风衣', '96.8', '335', '60');
+INSERT INTO `shop_1` VALUES ('23号', 'T血', '65.8', '632', '58');
+INSERT INTO `shop_1` VALUES ('24号', '牛仔裤', '86.3', '600', '140');
+INSERT INTO `shop_1` VALUES ('25号', 'T血', '65.8', '632', '48');
+INSERT INTO `shop_1` VALUES ('26号', '小西装', '96.8', '335', '43');
+INSERT INTO `shop_1` VALUES ('27号', '皮草', '135.9', '855', '57');
+INSERT INTO `shop_1` VALUES ('28号', '羽绒服', '253.6', '500', '10');
+INSERT INTO `shop_1` VALUES ('29号', 'T血', '65.8', '632', '63');
+INSERT INTO `shop_1` VALUES ('30号', '风衣', '96.8', '335', '78');
 
 SET FOREIGN_KEY_CHECKS = 1;
