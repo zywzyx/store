@@ -24,3 +24,4 @@ for i in range(12):
         data = ex
         update(sql,data)
         print(ex)
+
