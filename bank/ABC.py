@@ -204,7 +204,7 @@ def lookup_user():
 #
 def interface():
     while True:
-
+        page()
         choose = int(input("请选择需要办理的业务:"))
         if choose == 1:
             add_user()

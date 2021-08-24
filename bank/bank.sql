@@ -11,7 +11,11 @@
  Target Server Version : 50624
  File Encoding         : 65001
 
+<<<<<<< HEAD
  Date: 20/08/2021 16:03:28
+=======
+ Date: 20/08/2021 17:03:13
+>>>>>>> 7a9e5576dc0b91a6f5e758ee8608c580337afaf8
 */
 
 SET NAMES utf8mb4;
@@ -104,6 +108,7 @@ CREATE TABLE `shop`  (
 -- ----------------------------
 INSERT INTO `shop` VALUES ('样表', '样表', '样表', '样表', '样表');
 
+<<<<<<< HEAD
 -- ----------------------------
 -- Table structure for shop_1
 -- ----------------------------
@@ -150,4 +155,6 @@ INSERT INTO `shop_1` VALUES ('28号', '羽绒服', '253.6', '500', '10');
 INSERT INTO `shop_1` VALUES ('29号', 'T血', '65.8', '632', '63');
 INSERT INTO `shop_1` VALUES ('30号', '风衣', '96.8', '335', '78');
 
+=======
+>>>>>>> 7a9e5576dc0b91a6f5e758ee8608c580337afaf8
 SET FOREIGN_KEY_CHECKS = 1;
