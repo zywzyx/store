@@ -6,7 +6,7 @@ import time
 chromeDriver = webdriver.Chrome()
 
 # 打开百度网址
-chromeDriver.get("F:\PythonCode\python\Auto\dialogs.html")
+chromeDriver.get("F:\PythonCode\python\Auto\上传弹框跳转\dialogs.html")
 
 # 窗口最大化
 chromeDriver.maximize_window()
