@@ -24,7 +24,7 @@ driver.find_element_by_xpath('//*[@id="content"]/div[2]/div[1]/div/div[3]/a').cl
 time.sleep(2)
 driver.find_element_by_xpath('//*[@id="loginname"]').send_keys('1763*****')
 driver.find_element_by_xpath('//*[@id="nloginpwd"]').send_keys('a56816***')
-time.sleep(10)
+time.sleep(3)
 driver.find_element_by_xpath('//*[@id="loginsubmit"]').click()
 time.sleep(2)
 # a = driver.find_element_by_xpath('//*[@id="JDJRV-wrap-loginsubmit"]/div/div/div/div[2]/div[1]/div[1]')

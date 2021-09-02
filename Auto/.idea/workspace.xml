@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4c42b16-53ed-4835-a157-42b1251cb7f7" name="默认变更列表" comment="Auto 1">
-      <change afterPath="$PROJECT_DIR$/day2鼠标悬停/京东.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day2鼠标悬停/企查查.py" afterDir="false" />
+    <list default="true" id="b4c42b16-53ed-4835-a157-42b1251cb7f7" name="默认变更列表" comment="Auto 1 京东">
+      <change afterPath="$PROJECT_DIR$/day2鼠标悬停/淘宝.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/自动化测试/Initpage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/自动化测试/LoginPage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/自动化测试/TestLogin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/自动化测试/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/自动化测试/sentEmail.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../AutoTest/.idea/AutoTest.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../banks/.idea/banks.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../day12/.idea/day12.iml" afterDir="false" />
@@ -20,14 +24,7 @@
       <change afterPath="$PROJECT_DIR$/../day15/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../day15/read.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autotest.html" beforeDir="false" afterPath="$PROJECT_DIR$/上传弹框跳转/autotest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/上传弹框跳转/dialogs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pop.html" beforeDir="false" afterPath="$PROJECT_DIR$/上传弹框跳转/pop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/qwq.png" beforeDir="false" afterPath="$PROJECT_DIR$/上传弹框跳转/qwq.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webdriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/上传弹框跳转/webdriver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/上传文件.py" beforeDir="false" afterPath="$PROJECT_DIR$/上传弹框跳转/上传文件.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/弹框验证.py" beforeDir="false" afterPath="$PROJECT_DIR$/上传弹框跳转/弹框验证.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/页面跳转.py" beforeDir="false" afterPath="$PROJECT_DIR$/上传弹框跳转/页面跳转.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day2鼠标悬停/京东.py" beforeDir="false" afterPath="$PROJECT_DIR$/day2鼠标悬停/京东.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../banks/Bank.py" beforeDir="false" afterPath="$PROJECT_DIR$/../banks/Bank.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../day13/calcAddtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/../day13/calcAddtest.py" afterDir="false" />
     </list>
@@ -46,6 +43,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1wyFhs2ajIq2Y0CQcvbJHmgj6GD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -63,94 +68,11 @@
       <recent name="F:\PythonCode\python\Auto" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\PythonCode\python\Auto\自动化测试" />
       <recent name="F:\PythonCode\python\Auto\上传弹框跳转" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.企查查 (1)">
-    <configuration name="弹框验证 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Auto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/上传弹框跳转" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/上传弹框跳转/弹框验证.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="企查查 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Auto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day2鼠标悬停" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day2鼠标悬停/企查查.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="京东" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Auto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day2鼠标悬停" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day2鼠标悬停/京东.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="企查查" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Auto" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../新建文件夹/自动化接口测试/自动化测试7/day02/代码/autoweb02" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../新建文件夹/自动化接口测试/自动化测试7/day02/代码/autoweb02/企查查.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.main">
     <configuration name="上传文件" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Auto" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -214,13 +136,90 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/自动化测试/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestLogin.TestLogin 的 Unittest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TestLogin.TestLogin&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestLogin.TestLogin.testLoginSuccess 的 Unittest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;TestLogin.TestLogin.testLoginSuccess&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="qwq.TestLogin 的 Unittest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;qwq.TestLogin&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="qwq.TestLogin.testLoginSuccess 的 Unittest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Auto" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/自动化测试" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;qwq.TestLogin.testLoginSuccess&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.企查查 (1)" />
-        <item itemvalue="Python.京东" />
-        <item itemvalue="Python.上传文件" />
-        <item itemvalue="Python.弹框验证 (1)" />
-        <item itemvalue="Python.企查查" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python 测试.qwq.TestLogin 的 Unittest" />
+        <item itemvalue="Python 测试.TestLogin.TestLogin 的 Unittest" />
+        <item itemvalue="Python 测试.TestLogin.TestLogin.testLoginSuccess 的 Unittest" />
+        <item itemvalue="Python 测试.qwq.TestLogin.testLoginSuccess 的 Unittest" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630379140518</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Auto 1 京东">
+      <created>1630403596344</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1630403596344</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,6 +263,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Auto 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Auto 1" />
+    <MESSAGE value="Auto 1 京东" />
+    <option name="LAST_COMMIT_MESSAGE" value="Auto 1 京东" />
   </component>
 </project>
